@@ -1,0 +1,55 @@
+body{
+    font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+    color:white;
+    background-color:indigo;
+    background-image: url(../images/fischl.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 400px;
+}
+
+#alerta{
+    display: none;
+
+}
+
+#titulo{
+    font-size: 30px;
+}
+
+ul{
+    list-style-type: none;
+}
+input[type="text"],[type="email"]{
+    width: 60%;
+}
+input[type="number"],[type="range"]{
+    width: 25%;
+}
+
+input[type="radio"]{
+    width: 50px;
+    
+}
+
+input[type="checkbox"]{
+    margin: 0px;
+}
+label {
+    margin-top: 15px;
+    width: 20%;
+    height: 30px;
+    text-align: left;
+    display: inline-block;
+}
+
+.textolargo{
+    width: 100%;
+}
+#texto{
+    display:flex;
+    background-color:mediumpurple;
+    width: 80%;
+    resize: none;
+}
