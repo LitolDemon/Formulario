@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <li id="alerta"></li>
+        <form id="formulario" method="post" action="#">
+        <fieldset>
+            <legend id="titulo">Formulario</legend>
+            <ul>
+                <li>
+                    <label for="nombre">Nombres</label>
+                    <input type="text" id="nombre" placeholder="Nombres" required="true">
+                </li>
+                <li>
+                    <label for="apellido">Apellidos</label>
+                    <input type="text" id="apellido" placeholder="Apellidos" required="true">
+                </li>
+                <li>
+                    <label for="rut">RUT</label>
+                    <input type="text" id="rut" placeholder="RUT" required="true">
+                </li>
+                <li>
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" placeholder="Correo" required="true">
+                </li>
+                <li>
+                    <label for="telefono">Telefono</label>
+                    +56 <input type="number" id="telefono" placeholder="Telefono" required="true">
+                </li>
+                <li>
+                    <label id="rangos" for="checklist" class="textolargo">Lenguajes de programacion</label>
+                    <ul>
+                        <input type="checkbox" id="cb1" name="python" value="python" class="check">
+                        Python
+                    </ul>
+                    <ul>
+                        <input type="checkbox" id="cb2" name="java" value="java" class="check">
+                        Java
+                    </ul>
+                    <ul>
+                        <input type="checkbox" id="cb3" name="ts" value="ts" class="check">
+                        TypeScript
+                    </ul>
+                    <ul>
+                        <input type="checkbox" id="cb4" name="php" value="php" class="check">
+                        PHP
+                    </ul>
+                    <ul>
+                        <input type="checkbox" id="cb5" name="cs" value="cs" class="check">
+                        C#
+                    </ul>
+                    <ul>
+                        <input type="checkbox" id="cb3" name="cplus" value="cplus" class="check">
+                        C++
+                    </ul> 
+                </li>
+                <li>
+                    <label id="rangos" for="nivel" class="textolargo">Nivel de conocimiento en programación</label>
+                        <ul>
+                            0
+                            <input type="range" id="nivel" min="0" max="10" value="0">
+                            10
+                        </ul>
+                    
+                </li>
+                <li>
+
+                </li>
+                    <label class="textolargo">Años de experiencia</label>
+                    <ul id="rad">
+                        <input type="radio" id="1a" required="true" name="años" class="exp">
+                        1
+                        <input type="radio" id="2a" name="años" class="exp">
+                        2
+                        <input type="radio" id="3a" name="años" class="exp">
+                        3
+                        <input type="radio" id="4a" name="años" class="exp">
+                        4
+                        <input type="radio" id="5a" name="años" class="exp">
+                        5
+                    </ul>
+                <li>
+                <li>
+                    <label for="texto" class="textolargo">Acerca de usted</label>
+                    <textarea name="texto" id="texto" rows="10" cols="50" maxlength="300" required></textarea>
+                </li>
+                    <br>
+                    <button id="botones" type="submit">Enviar
+                    <button id="botones" type="button" onclick="limpiarDatos()">Limpiar
+            </li>
+            </ul>
+        </fieldset>
+        </form>
+        <script src="js/funciones.js" async defer></script>
+    </body>
+</html>
